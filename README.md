@@ -16,4 +16,4 @@
 - JavaScript (ES6+)
 - Адаптивный дизайн
 
-
+https://ch-kost.github.io/kontrol2/
