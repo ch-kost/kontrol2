@@ -134,6 +134,11 @@ h3 {
     border-radius: 50%;
     overflow: hidden;
     box-shadow: var(--box-shadow);
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
 }
 
 .hero-image img {
@@ -224,6 +229,11 @@ h3 {
 .project-image {
     height: 180px;
     overflow: hidden;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
 }
 
 .project-image img {
