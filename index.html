@@ -3,147 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио студента-разработчика - Главная</title>
+    <title>Главная - Портфолио разработчика</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <div class="logo-icon">ЧК</div>
-                    <span>Чугунов Константин</span>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html" class="active">Главная</a></li>
-                        <li><a href="pages/projects.html">Проекты</a></li>
-                        <li><a href="pages/diary.html">Дневник</a></li>
-                        <li><a href="pages/contacts.html">Контакты</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <div class="container">
-            <section class="hero">
-                <div class="hero-image">
-                    <img src="images/photo.jpg" alt="Фото студента">
-                </div>
-                <div class="hero-content">
-                    <h1>Привет! Я Чугунов Константин</h1>
-                    <p>Студент факультета фулл-стэк</p>
-                    <p>Увлекаюсь веб-разработкой и созданием современных пользовательских интерфейсов.</p>
-                    <a href="assets/resume.pdf" class="btn" download>Скачать резюме</a>
-                </div>
-            </section>
-
-            <section class="skills-section">
-                <h2>Мои навыки</h2>
-                <div class="skills-container">
-                    <div class="skill">
-                        <div class="skill-name">
-                            <span>HTML/CSS</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 50%"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-name">
-                            <span>JavaScript</span>
-                            <span>30%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 30%"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-name">
-                            <span>Bootstrap</span>
-                            <span>25%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 25%"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-name">
-                            <span>React</span>
-                            <span>10%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 10%"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="projects-preview">
-                <h2>Лучшие проекты</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project1.jpg" alt="Личный сайт">
-                        </div>
-                        <div class="project-content">
-                            <h3>Личный сайт</h3>
-                            <p>Персональный веб-сайт с адаптивным дизайном</p>
-                            <div class="project-tags">
-                                <span class="tag">HTML</span>
-                                <span class="tag">CSS</span>
-                                <span class="tag">JavaScript</span>
-                            </div>
-                            <a href="pages/projects.html" class="project-link">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project2.jpg" alt="Todo-приложение">
-                        </div>
-                        <div class="project-content">
-                            <h3>Todo-приложение</h3>
-                            <p>Приложение для управления задачами с локальным хранилищем</p>
-                            <div class="project-tags">
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">LocalStorage</span>
-                            </div>
-                            <a href="pages/projects.html" class="project-link">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="images/project3.jpg" alt="Интернет-магазин">
-                        </div>
-                        <div class="project-content">
-                            <h3>Интернет-магазин</h3>
-                            <p>Прототип интернет-магазина с корзиной товаров</p>
-                            <div class="project-tags">
-                                <span class="tag">React</span>
-                                <span class="tag">API</span>
-                            </div>
-                            <a href="pages/projects.html" class="project-link">Подробнее</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>© 2025 Чугунов Константин. Все права защищены.</p>
-                <div class="footer-contacts">
-                    <span>📧 student@edu.ru</span>
-                    <span>📱 GitHub: ch-kost</span>
+    <div class="page">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <h1 class="header__title">Чугунов Константин</h1>
+                    <p class="header__subtitle">Студент-разработчик</p>
                 </div>
             </div>
-        </div>
-    </footer>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav__list">
+                    <li class="nav__item nav__item--active">
+                        <a href="index.html" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="pages/projects.html" class="nav__link">Проекты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="pages/diary.html" class="nav__link">Дневник</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="pages/contacts.html" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main">
+            <div class="container">
+                <!-- Hero Section -->
+                <section class="hero">
+                    <div class="hero__content">
+                        <div class="hero__image">
+                            <img src="images/photo.jpg" alt="Фото Чугунова Константина" class="hero__photo">
+                        </div>
+                        <div class="hero__info">
+                            <h2 class="hero__greeting">Привет! Я Чугунов Константин</h2>
+                            <p class="hero__description">
+                                Студент факультета фулл-стэк<br>
+                                Увлекаюсь веб-разработкой и созданием современных пользовательских интерфейсов.
+                            </p>
+                            <button class="button button--primary hero__button">
+                                Скачать резюме
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Skills Section -->
+                <section class="skills">
+                    <h2 class="section-title">Мои навыки</h2>
+                    <div class="skills__grid">
+                        <div class="skill">
+                            <div class="skill__header">
+                                <span class="skill__name">HTML/CSS</span>
+                                <span class="skill__percent">50%</span>
+                            </div>
+                            <div class="skill__progress">
+                                <div class="skill__progress-bar" style="width: 50%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__header">
+                                <span class="skill__name">JavaScript</span>
+                                <span class="skill__percent">30%</span>
+                            </div>
+                            <div class="skill__progress">
+                                <div class="skill__progress-bar" style="width: 30%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__header">
+                                <span class="skill__name">Bootstrap</span>
+                                <span class="skill__percent">25%</span>
+                            </div>
+                            <div class="skill__progress">
+                                <div class="skill__progress-bar" style="width: 25%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill__header">
+                                <span class="skill__name">React</span>
+                                <span class="skill__percent">10%</span>
+                            </div>
+                            <div class="skill__progress">
+                                <div class="skill__progress-bar" style="width: 10%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects Preview -->
+                <section class="projects-preview">
+                    <h2 class="section-title">Лучшие проекты</h2>
+                    <div class="projects-preview__grid">
+                        <article class="project-card">
+                            <div class="project-card__image">
+                                <img src="images/project1.jpg" alt="Личный сайт">
+                            </div>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title">Личный сайт</h3>
+                                <p class="project-card__description">
+                                    Персональный веб-сайт с адаптивным дизайном и семантической версткой
+                                </p>
+                                <div class="project-card__tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <a href="pages/projects.html" class="button button--outline project-card__button">Подробнее</a>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-card__image">
+                                <img src="images/project2.jpg" alt="Todo приложение">
+                            </div>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title">Todo-приложение</h3>
+                                <p class="project-card__description">
+                                    Приложение для управления задачами с локальным хранилищем и фильтрацией
+                                </p>
+                                <div class="project-card__tags">
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">LocalStorage</span>
+                                </div>
+                                <a href="pages/projects.html" class="button button--outline project-card__button">Подробнее</a>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-card__image">
+                                <img src="images/project3.jpg" alt="Интернет-магазин">
+                            </div>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title">Интернет-магазин</h3>
+                                <p class="project-card__description">
+                                    Прототип интернет-магазина с корзиной товаров и системой фильтров
+                                </p>
+                                <div class="project-card__tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">API</span>
+                                </div>
+                                <a href="pages/projects.html" class="button button--outline project-card__button">Подробнее</a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <p class="footer__copyright">&copy; 2025 Чугунов Константин. Все права защищены.</p>
+                    <div class="footer__links">
+                        <a href="mailto:student@edu.ru" class="footer__link">student@edu.ru</a>
+                        <a href="https://github.com/ch-kost" class="footer__link">GitHub: ch-kost</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
     <script src="scripts/main.js"></script>
 </body>

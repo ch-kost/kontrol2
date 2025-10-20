@@ -3,119 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио - Контакты</title>
+    <title>Контакты - Портфолио разработчика</title>
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <div class="logo-icon">ЧК</div>
-                    <span>Чугунов Константин</span>
+    <div class="page">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <h1 class="header__title">Чугунов Константин</h1>
+                    <p class="header__subtitle">Студент-разработчик</p>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Главная</a></li>
-                        <li><a href="projects.html">Проекты</a></li>
-                        <li><a href="diary.html">Дневник</a></li>
-                        <li><a href="contacts.html" class="active">Контакты</a></li>
-                    </ul>
-                </nav>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <main>
-        <div class="container">
-            <section class="contacts-page">
-                <h1>Свяжитесь со мной</h1>
-                
-                <div class="contact-container">
-                    <div class="contact-form-section">
-                        <h2>Форма обратной связи</h2>
-                        <form id="contact-form" class="contact-form">
-                            <div class="form-group">
-                                <label for="name">Имя *</label>
-                                <input type="text" id="name" class="form-control" required>
-                                <span class="error-message" id="name-error"></span>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email">Email *</label>
-                                <input type="email" id="email" class="form-control" required>
-                                <span class="error-message" id="email-error"></span>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="subject">Тема сообщения</label>
-                                <input type="text" id="subject" class="form-control">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="message">Сообщение *</label>
-                                <textarea id="message" class="form-control" rows="5" required></textarea>
-                                <span class="error-message" id="message-error"></span>
-                            </div>
-                            
-                            <button type="submit" class="btn">Отправить сообщение</button>
-                        </form>
-                    </div>
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="projects.html" class="nav__link">Проекты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="diary.html" class="nav__link">Дневник</a>
+                    </li>
+                    <li class="nav__item nav__item--active">
+                        <a href="contacts.html" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main">
+            <div class="container">
+                <section class="contacts">
+                    <h2 class="section-title">Свяжитесь со мной</h2>
                     
-                    <div class="contact-info-section">
-                        <h2>Контактная информация</h2>
+                    <div class="contacts__content">
+                        <div class="contact-form">
+                            <h3 class="contact-form__title">Форма обратной связи</h3>
+                            <form id="contact-form" class="form">
+                                <div class="form__group">
+                                    <label for="name" class="form__label">Имя *</label>
+                                    <input type="text" id="name" class="form__input" required>
+                                    <span class="form__error" id="name-error"></span>
+                                </div>
+                                
+                                <div class="form__group">
+                                    <label for="email" class="form__label">Email *</label>
+                                    <input type="email" id="email" class="form__input" required>
+                                    <span class="form__error" id="email-error"></span>
+                                </div>
+                                
+                                <div class="form__group">
+                                    <label for="subject" class="form__label">Тема сообщения</label>
+                                    <input type="text" id="subject" class="form__input">
+                                </div>
+                                
+                                <div class="form__group">
+                                    <label for="message" class="form__label">Сообщение *</label>
+                                    <textarea id="message" class="form__textarea" required></textarea>
+                                    <span class="form__error" id="message-error"></span>
+                                </div>
+                                
+                                <button type="submit" class="button button--primary form__button">Отправить сообщение</button>
+                            </form>
+                        </div>
                         
                         <div class="contact-info">
-                            <div class="contact-item">
-                                <div class="contact-icon">📧</div>
-                                <div class="contact-details">
-                                    <h3>Email</h3>
-                                    <p>student@edu.ru</p>
+                            <h3 class="contact-info__title">Контактная информация</h3>
+                            <div class="contact-info__items">
+                                <div class="contact-item">
+                                    <div class="contact-item__icon">📧</div>
+                                    <div class="contact-item__content">
+                                        <h4 class="contact-item__title">Email</h4>
+                                        <p class="contact-item__value">student@edu.ru</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-item__icon">📱</div>
+                                    <div class="contact-item__content">
+                                        <h4 class="contact-item__title">GitHub</h4>
+                                        <p class="contact-item__value">github.com/ch-kost</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-item__icon">📍</div>
+                                    <div class="contact-item__content">
+                                        <h4 class="contact-item__title">Местоположение</h4>
+                                        <p class="contact-item__value">Москва, Россия</p>
+                                    </div>
                                 </div>
                             </div>
                             
-                            <div class="contact-item">
-                                <div class="contact-icon">📱</div>
-                                <div class="contact-details">
-                                    <h3>GitHub</h3>
-                                    <p>github.com/ch-kost</p>
-                                </div>
-                            </div>
-                            
-                            <div class="contact-item">
-                                <div class="contact-icon">📍</div>
-                                <div class="contact-details">
-                                    <h3>Местоположение</h3>
+                            <div class="map-section">
+                                <h4 class="map-section__title">Я на карте</h4>
+                                <div class="map-placeholder">
+                                    <p>Карта местоположения</p>
                                     <p>Москва, Россия</p>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="map-section">
-                            <h3>Я на карте</h3>
-                            <div class="map-placeholder">
-                                <!-- Здесь будет карта -->
-                                <p>Карта местоположения</p>
-                                <p>Москва, Россия</p>
-                            </div>
-                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <p class="footer__copyright">&copy; 2025 Чугунов Константин. Все права защищены.</p>
+                    <div class="footer__links">
+                        <a href="mailto:student@edu.ru" class="footer__link">student@edu.ru</a>
+                        <a href="https://github.com/ch-kost" class="footer__link">GitHub: ch-kost</a>
                     </div>
                 </div>
-            </section>
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>© 2025. Все права защищены.</p>
-                <div class="footer-contacts">
-                    <span>📧 student@edu.ru</span>
-                    <span>📱 GitHub: ch-kost</span>
-                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script src="../scripts/main.js"></script>
     <script src="../scripts/form-validation.js"></script>

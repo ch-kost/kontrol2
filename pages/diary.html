@@ -3,167 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио - Учебный дневник</title>
+    <title>Дневник - Портфолио разработчика</title>
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <div class="logo-icon">ЧК</div>
-                    <span>Чугунов Константин</span>
+    <div class="page">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <h1 class="header__title">Чугунов Константин</h1>
+                    <p class="header__subtitle">Студент-разработчик</p>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Главная</a></li>
-                        <li><a href="projects.html">Проекты</a></li>
-                        <li><a href="diary.html" class="active">Дневник</a></li>
-                        <li><a href="contacts.html">Контакты</a></li>
-                    </ul>
-                </nav>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <main>
-        <div class="container">
-            <section class="diary-page">
-                <h1>Мой учебный прогресс</h1>
-                
-                <div class="diary-container">
-                    <div class="diary-entries">
-                        <h2>Последние записи</h2>
-                        <div class="entries-list">
-                            <div class="diary-entry">
-                                <div class="entry-header">
-                                    <span class="entry-date">15 января 2025</span>
-                                    <span class="entry-status status-completed">✓ Завершено</span>
-                                </div>
-                                <h3 class="entry-title">Верстка макета сайта</h3>
-                                <p class="entry-description">Изучение семантической верстки и адаптивного дизайна. Создание макета интернет-магазина с использованием Flexbox и Grid.</p>
-                            </div>
-                            
-                            <div class="diary-entry">
-                                <div class="entry-header">
-                                    <span class="entry-date">20 апреля 2025</span>
-                                    <span class="entry-status status-completed">✓ Завершено</span>
-                                </div>
-                                <h3 class="entry-title">JavaScript основы</h3>
-                                <p class="entry-description">Переменные, функции, условия и циклы в JavaScript. Решение практических задач на Codewars.</p>
-                            </div>
-                            
-                            <div class="diary-entry">
-                                <div class="entry-header">
-                                    <span class="entry-date">22 июня 2025</span>
-                                    <span class="entry-status status-in-progress">⏳ В процессе</span>
-                                </div>
-                                <h3 class="entry-title">Работа с формами</h3>
-                                <p class="entry-description">Валидация форм и обработка пользовательского ввода. Создание формы обратной связи с проверкой данных.</p>
-                            </div>
-                            
-                            <div class="diary-entry">
-                                <div class="entry-header">
-                                    <span class="entry-date">13 октября 2025</span>
-                                    <span class="entry-status status-in-progress">⏳ В процессе</span>
-                                </div>
-                                <h3 class="entry-title">Адаптивный дизайн</h3>
-                                <p class="entry-description">Медиа-запросы и подход Mobile First. Адаптация существующего проекта под мобильные устройства.</p>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="projects.html" class="nav__link">Проекты</a>
+                    </li>
+                    <li class="nav__item nav__item--active">
+                        <a href="diary.html" class="nav__link">Дневник</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contacts.html" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main">
+            <div class="container">
+                <section class="diary">
+                    <h2 class="section-title">Мой учебный прогресс</h2>
                     
-                    <div class="courses-progress">
-                        <h2>Текущие курсы</h2>
-                        <div class="courses-list">
-                            <div class="course">
-                                <div class="course-name">
-                                    <span>Веб-разработка</span>
-                                    <span>50%</span>
+                    <div class="diary__content">
+                        <div class="timeline">
+                            <article class="timeline__item">
+                                <div class="timeline__date">15 января 2025</div>
+                                <div class="timeline__content">
+                                    <h3 class="timeline__title">Верстка макета сайта</h3>
+                                    <p class="timeline__description">
+                                        Изучение семантической верстки и адаптивного дизайна. Создание макета интернет-магазина с использованием Flexbox и Grid.
+                                    </p>
+                                    <span class="timeline__status timeline__status--completed">Завершено</span>
                                 </div>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 50%"></div>
-                                </div>
-                            </div>
+                            </article>
                             
-                            <div class="course">
-                                <div class="course-name">
-                                    <span>JavaScript</span>
-                                    <span>25%</span>
+                            <article class="timeline__item">
+                                <div class="timeline__date">20 апреля 2025</div>
+                                <div class="timeline__content">
+                                    <h3 class="timeline__title">JavaScript основы</h3>
+                                    <p class="timeline__description">
+                                        Переменные, функции, условия и циклы в JavaScript. Решение практических задач на Codewars.
+                                    </p>
+                                    <span class="timeline__status timeline__status--completed">Завершено</span>
                                 </div>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 25%"></div>
-                                </div>
-                            </div>
+                            </article>
                             
-                            <div class="course">
-                                <div class="course-name">
-                                    <span>React</span>
-                                    <span>10%</span>
+                            <article class="timeline__item">
+                                <div class="timeline__date">22 июня 2025</div>
+                                <div class="timeline__content">
+                                    <h3 class="timeline__title">Работа с формами</h3>
+                                    <p class="timeline__description">
+                                        Валидация форм и обработка пользовательского ввода. Создание формы обратной связи с проверкой данных.
+                                    </p>
+                                    <span class="timeline__status timeline__status--in-progress">В процессе</span>
                                 </div>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 10%"></div>
-                                </div>
-                            </div>
+                            </article>
                             
-                            <div class="course">
-                                <div class="course-name">
-                                    <span>Базы данных</span>
-                                    <span>10%</span>
+                            <article class="timeline__item">
+                                <div class="timeline__date">13 октября 2025</div>
+                                <div class="timeline__content">
+                                    <h3 class="timeline__title">Адаптивный дизайн</h3>
+                                    <p class="timeline__description">
+                                        Медиа-запросы и подход Mobile First. Адаптация существующего проекта под мобильные устройства.
+                                    </p>
+                                    <span class="timeline__status timeline__status--in-progress">В процессе</span>
                                 </div>
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 10%"></div>
+                            </article>
+                        </div>
+
+                        <div class="courses">
+                            <h3 class="courses__title">Текущие курсы</h3>
+                            <div class="courses__grid">
+                                <div class="course">
+                                    <div class="course__header">
+                                        <span class="course__name">Веб-разработка</span>
+                                        <span class="course__percent">50%</span>
+                                    </div>
+                                    <div class="course__progress">
+                                        <div class="course__progress-bar" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="course">
+                                    <div class="course__header">
+                                        <span class="course__name">JavaScript</span>
+                                        <span class="course__percent">25%</span>
+                                    </div>
+                                    <div class="course__progress">
+                                        <div class="course__progress-bar" style="width: 25%"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="course">
+                                    <div class="course__header">
+                                        <span class="course__name">React</span>
+                                        <span class="course__percent">10%</span>
+                                    </div>
+                                    <div class="course__progress">
+                                        <div class="course__progress-bar" style="width: 10%"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="course">
+                                    <div class="course__header">
+                                        <span class="course__name">Базы данных</span>
+                                        <span class="course__percent">10%</span>
+                                    </div>
+                                    <div class="course__progress">
+                                        <div class="course__progress-bar" style="width: 10%"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="add-entry-section">
-                    <h2>Добавить новую запись</h2>
-                    <form id="diary-form" class="diary-form">
-                        <div class="form-row">
+
+                    <div class="add-entry">
+                        <h3 class="add-entry__title">Добавить новую запись</h3>
+                        <form id="diary-form" class="add-entry__form">
                             <div class="form-group">
-                                <label for="entry-date">Дата</label>
-                                <input type="date" id="entry-date" class="form-control" required>
+                                <label for="entry-date" class="form-label">Дата</label>
+                                <input type="date" id="entry-date" class="form-input" required>
                             </div>
+                            
                             <div class="form-group">
-                                <label for="entry-status">Статус</label>
-                                <select id="entry-status" class="form-control" required>
+                                <label for="entry-status" class="form-label">Статус</label>
+                                <select id="entry-status" class="form-input" required>
                                     <option value="in-progress">В процессе</option>
                                     <option value="completed">Завершено</option>
                                 </select>
                             </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="entry-title">Название темы</label>
-                            <input type="text" id="entry-title" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="entry-description">Описание работы</label>
-                            <textarea id="entry-description" class="form-control" rows="4" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn">Добавить запись</button>
-                    </form>
-                </div>
-            </section>
-        </div>
-    </main>
+                            
+                            <div class="form-group">
+                                <label for="entry-title" class="form-label">Название темы</label>
+                                <input type="text" id="entry-title" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="entry-description" class="form-label">Описание работы</label>
+                                <textarea id="entry-description" class="form-textarea" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="button button--primary">Добавить запись</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>© 2025 Чугунов Константин. Все права защищены.</p>
-                <div class="footer-contacts">
-                    <span>📧 student@edu.ru</span>
-                    <span>📱 GitHub: ch-kost</span>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <p class="footer__copyright">&copy; 2025 Чугунов Константин. Все права защищены.</p>
+                    <div class="footer__links">
+                        <a href="mailto:student@edu.ru" class="footer__link">student@edu.ru</a>
+                        <a href="https://github.com/ch-kost" class="footer__link">GitHub: ch-kost</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script src="../scripts/main.js"></script>
     <script src="../scripts/diary.js"></script>
