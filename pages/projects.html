@@ -6,7 +6,7 @@
     <title>Проекты - Портфолио разработчика</title>
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
-<body>
+<body data-assets-path="..">
     <div class="page">
         <!-- Header -->
         <header class="header">
@@ -44,86 +44,23 @@
                 <section class="projects">
                     <div class="projects__header">
                         <h2 class="section-title">Мои проекты</h2>
-                        <div class="projects__filters">
-                            <button class="filter filter--active" data-filter="all">Все</button>
-                            <button class="filter" data-filter="html">HTML/CSS</button>
-                            <button class="filter" data-filter="js">JavaScript</button>
-                            <button class="filter" data-filter="react">React</button>
-                            <button class="filter" data-filter="bootstrap">Bootstrap</button>
+                        <div class="projects__controls">
+                            <div class="projects__filters">
+                                <button class="filter filter--active" data-filter="all">Все</button>
+                                <button class="filter" data-filter="html">HTML/CSS</button>
+                                <button class="filter" data-filter="js">JavaScript</button>
+                                <button class="filter" data-filter="react">React</button>
+                                <button class="filter" data-filter="bootstrap">Bootstrap</button>
+                            </div>
+                            <div class="projects__search">
+                                <input type="search" class="projects__search-input" placeholder="Поиск по проектам" data-project-search>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="projects__grid">
-                        <article class="project-card" data-category="html">
-                            <div class="project-card__image">
-                                <img src="../images/project1.jpg" alt="Личный сайт">
-                            </div>
-                            <div class="project-card__content">
-                                <h3 class="project-card__title">Личный сайт</h3>
-                                <p class="project-card__description">
-                                    Персональный веб-сайт с адаптивным дизайном и семантической версткой
-                                </p>
-                                <div class="project-card__tags">
-                                    <span class="tag">HTML</span>
-                                    <span class="tag">CSS</span>
-                                    <span class="tag">JavaScript</span>
-                                </div>
-                                <button class="button button--primary project-modal-btn" data-project="1">Подробнее</button>
-                            </div>
-                        </article>
-
-                        <article class="project-card" data-category="js">
-                            <div class="project-card__image">
-                                <img src="../images/project2.jpg" alt="Todo-приложение">
-                            </div>
-                            <div class="project-card__content">
-                                <h3 class="project-card__title">Todo-приложение</h3>
-                                <p class="project-card__description">
-                                    Приложение для управления задачами с локальным хранилищем и фильтрацией
-                                </p>
-                                <div class="project-card__tags">
-                                    <span class="tag">JavaScript</span>
-                                    <span class="tag">LocalStorage</span>
-                                </div>
-                                <button class="button button--primary project-modal-btn" data-project="2">Подробнее</button>
-                            </div>
-                        </article>
-
-                        <article class="project-card" data-category="react">
-                            <div class="project-card__image">
-                                <img src="../images/project3.jpg" alt="Интернет-магазин">
-                            </div>
-                            <div class="project-card__content">
-                                <h3 class="project-card__title">Интернет-магазин</h3>
-                                <p class="project-card__description">
-                                    Прототип интернет-магазина с корзиной товаров и системой фильтров
-                                </p>
-                                <div class="project-card__tags">
-                                    <span class="tag">React</span>
-                                    <span class="tag">API</span>
-                                    <span class="tag">CSS Modules</span>
-                                </div>
-                                <button class="button button--primary project-modal-btn" data-project="3">Подробнее</button>
-                            </div>
-                        </article>
-
-                        <article class="project-card" data-category="bootstrap">
-                            <div class="project-card__image">
-                                <img src="../images/project4.jpg" alt="Портфолио на Bootstrap">
-                            </div>
-                            <div class="project-card__content">
-                                <h3 class="project-card__title">Портфолио на Bootstrap</h3>
-                                <p class="project-card__description">
-                                    Адаптивное портфолио с использованием Bootstrap 5 и кастомными стилями
-                                </p>
-                                <div class="project-card__tags">
-                                    <span class="tag">Bootstrap</span>
-                                    <span class="tag">CSS</span>
-                                    <span class="tag">JavaScript</span>
-                                </div>
-                                <button class="button button--primary project-modal-btn" data-project="4">Подробнее</button>
-                            </div>
-                        </article>
+                    <div class="projects__grid" data-projects-grid></div>
+                    <div class="projects__empty" data-projects-empty hidden>
+                        По заданным условиям ничего не найдено. Попробуйте изменить фильтры или запрос.
                     </div>
                 </section>
             </div>
@@ -153,6 +90,7 @@
         </div>
     </div>
 
+    <script src="../scripts/projects.js"></script>
     <script src="../scripts/main.js"></script>
     <script src="../scripts/filters.js"></script>
     <script src="../scripts/modal.js"></script>
